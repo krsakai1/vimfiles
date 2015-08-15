@@ -1,7 +1,7 @@
 # vimfiles
 My vim setup
 
-# Included Plugins:
-* pathogen
-* supertab
-* airline
+## Included Plugins:
+* [pathogen](https://github.com/tpope/vim-pathogen)
+* [supertab](https://github.com/ervandew/supertab)
+* [airline](https://github.com/bling/vim-airline)
