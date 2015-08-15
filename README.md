@@ -7,3 +7,4 @@ My vim setup
 * [airline](https://github.com/bling/vim-airline)
 * [fugitive](https://github.com/tpope/vim-fugitive)
 * [gitgutter](https://github.com/airblade/vim-gitgutter)
+* [Colorizer](https://github.com/chrisbra/Colorizer)
