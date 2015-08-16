@@ -8,3 +8,4 @@ My vim setup
 * [fugitive](https://github.com/tpope/vim-fugitive)
 * [gitgutter](https://github.com/airblade/vim-gitgutter)
 * [Colorizer](https://github.com/chrisbra/Colorizer)
+* [unite](https://github.com/Shougo/unite.vim)
