@@ -9,3 +9,4 @@ My vim setup
 * [gitgutter](https://github.com/airblade/vim-gitgutter)
 * [Colorizer](https://github.com/chrisbra/Colorizer)
 * [unite](https://github.com/Shougo/unite.vim)
+* [tagbar](https://github.com/majutsushi/tagbar)

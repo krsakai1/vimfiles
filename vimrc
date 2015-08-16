@@ -225,6 +225,17 @@ let g:airline#extensions#hunks#enabled = 0
 
 
 
+""""""""""""""""""""""""""""""""""""""""
+" Tagbar Settings:
+""""""""""""""""""""""""""""""""""""""""
+
+""" Increase the window size when opening tagbar:
+let g:tagbar_expand = 1
+
+""" Map "TagbarToggle" to F8:
+nmap <F8> :TagbarToggle<CR>
+
+
 
 """"""""""""""""""""""""""""""""""""""""
 " Unite Settings:
