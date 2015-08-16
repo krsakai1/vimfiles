@@ -245,9 +245,13 @@ nmap <F8> :TagbarToggle<CR>
 let g:unite_source_history_yank_enable = 1
 nnoremap <space>y :Unite history/yank<cr>
 
-""" ctrlp file search (async needs vimproc):
+
+""" file search (async needs vimproc):
+nnoremap <space>f :Unite -start-insert file<cr>
+
+"(async needs vimproc):
 "nnoremap <C-p> :Unite file_rec/async<cr>
-nnoremap <space>f :Unite file_rec<cr>
+nnoremap <space>rf :Unite -start-insert file_rec<cr>
 
 
 """ grep searching (needs vimproc):
