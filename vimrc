@@ -3,6 +3,10 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+
+""""""""""""""""""""""""""""""""""""""""
+""" Pathogen Settings:
+""""""""""""""""""""""""""""""""""""""""
 execute pathogen#infect()
 call pathogen#helptags()
 
@@ -63,6 +67,10 @@ au BufRead,BufNewFile *.dat setfiletype dat
 au BufRead,BufNewFile *.kv setfiletype kivy
 
 
+" Turn on syntax folding for output files:
+autocmd FileType output setlocal foldmethod=syntax
+
+
 autocmd FileType cpp setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType h setlocal shiftwidth=4 tabstop=4 softtabstop=4
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
@@ -70,7 +78,7 @@ autocmd FileType kivy setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 
 
 " Pylint settings:
-autocmd FileType python compiler pylint
+"autocmd FileType python compiler pylint
 "let g:pylint_onwrite = 0
 "let g:pylint_show_rate = 0
 "let g:pylint_cwindow = 0
@@ -164,11 +172,19 @@ if has ('gui_running')
    set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI
 endif
 
-""" Autocomplete options:
+"""set antialias
+set noantialias
+
+
+
+""""""""""""""""""""""""""""""""""""""""
+""" Autocomplete Settings:
+""""""""""""""""""""""""""""""""""""""""
 filetype plugin on
 set ofu=syntaxcomplete#Complete
 set completeopt+=longest
 set completeopt-=preview
+
 
 """ Turn on dictionaries for autocomplete:
 set complete+=k
@@ -183,7 +199,10 @@ autocmd FileType python setlocal dictionary+=C:/Program\ Files\ (x86)/Vim/vimfil
 
 autocmd FileType kivy setlocal dictionary+=C:/Program\ Files\ (x86)/Vim/vimfiles/dictionary/kivy.dict
 
-""" SuperTab options:
+
+""""""""""""""""""""""""""""""""""""""""
+""" Supertab Settings:
+""""""""""""""""""""""""""""""""""""""""
 """"""let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
@@ -197,10 +216,17 @@ set ignorecase
 set smartcase
 
 
+""" Get rid of .un~ files:
+set noundofile
+
 
 """ Turn on spell check for git commits
 autocmd FileType gitcommit setlocal spell spelllang=en_us
 
+
+
+""" Open the very last fold (this will be the last simulation).
+autocmd FileType output normal G zo
 
 
 """"""""""""""""""""""""""""""""""""""""
