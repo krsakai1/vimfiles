@@ -5,7 +5,7 @@ set nocompatible
 
 
 """"""""""""""""""""""""""""""""""""""""
-""" Pathogen Settings:
+" Pathogen Settings:
 """"""""""""""""""""""""""""""""""""""""
 execute pathogen#infect()
 call pathogen#helptags()
@@ -22,9 +22,6 @@ if v:progname =~? "evim"
   finish
 endif
 
-" Use Vim settings, rather then Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -168,8 +165,14 @@ set nobackup
 set nowritebackup
 
 if has ('gui_running')
-   "set guifont=DejaVu_Sans_Mono:h10:cANSI
-   set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI
+   if has("gui_win32")
+      "set guifont=DejaVu_Sans_Mono:h10:cANSI
+      set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI
+   elseif has("gui_macvim")
+      set guifont=DejaVu_Sans_Mono_for_Powerline:h14
+   elseif has("gui_gtk2")
+      set guifont=DejaVu_Sans_Mono_for_Powerline:h10
+   endif
 endif
 
 """set antialias
@@ -178,7 +181,7 @@ set noantialias
 
 
 """"""""""""""""""""""""""""""""""""""""
-""" Autocomplete Settings:
+" Autocomplete Settings:
 """"""""""""""""""""""""""""""""""""""""
 filetype plugin on
 set ofu=syntaxcomplete#Complete
@@ -201,7 +204,7 @@ autocmd FileType kivy setlocal dictionary+=C:/Program\ Files\ (x86)/Vim/vimfiles
 
 
 """"""""""""""""""""""""""""""""""""""""
-""" Supertab Settings:
+" Supertab Settings:
 """"""""""""""""""""""""""""""""""""""""
 """"""let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabDefaultCompletionType = "<c-n>"
@@ -230,7 +233,7 @@ autocmd FileType output normal G zo
 
 
 """"""""""""""""""""""""""""""""""""""""
-""" Airline Settings:
+" Airline Settings:
 """"""""""""""""""""""""""""""""""""""""
 
 """ Need to turn on utf-8 encoding for the powerline symbols to show:
@@ -260,6 +263,16 @@ let g:tagbar_expand = 1
 
 """ Map "TagbarToggle" to F8:
 nmap <F8> :TagbarToggle<CR>
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""
+" GitGutter Settings:
+""""""""""""""""""""""""""""""""""""""""
+
+""" Increase max signs:
+let g:gitgutter_max_signs = 1000
 
 
 
