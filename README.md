@@ -1,6 +1,8 @@
 # vimfiles
 My vim setup
 
+After cloning use "git submodule update --init" to download plugins.
+
 ## Included Plugins:
 * [pathogen](https://github.com/tpope/vim-pathogen)
 * [supertab](https://github.com/ervandew/supertab)
