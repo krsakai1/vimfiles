@@ -59,6 +59,7 @@ set shiftwidth=3
 set noexpandtab
 
 au BufRead,BufNewFile *.input setfiletype input
+au BufRead,BufNewFile *.output setfiletype output
 au BufRead,BufNewFile *.bibtextype setfiletype bibtextype
 au BufRead,BufNewFile *.dat setfiletype dat
 au BufRead,BufNewFile *.kv setfiletype kivy

@@ -23,7 +23,7 @@ syn case ignore
 
 
 " Known python keywords
-syn keyword inputPython pi sin cos tan 
+syn keyword inputPython pi sin cos tan sqrt
 
 
 " Logicals
@@ -88,4 +88,6 @@ hi def link inputComment      Comment
 hi def link inputString       String
 hi def link inputLogical      Statement
 hi def link inputPython       Statement
+hi def link inputVariable     Keyword
+
 
