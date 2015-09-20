@@ -16,3 +16,9 @@
 [submodule "bundle/unite"]
 	path = bundle/unite
 	url = https://github.com/Shougo/unite.vim.git
+[submodule "bundle/vim-misc"]
+	path = bundle/vim-misc
+	url = https://github.com/xolox/vim-misc.git
+[submodule "bundle/vim-shell"]
+	path = bundle/vim-shell
+	url = https://github.com/xolox/vim-shell.git

@@ -11,3 +11,5 @@ After cloning use "git submodule update --init" to download plugins.
 * [gitgutter](https://github.com/airblade/vim-gitgutter)
 * [Colorizer](https://github.com/chrisbra/Colorizer)
 * [unite](https://github.com/Shougo/unite.vim)
+* [vim-misc](https://github.com/xolox/vim-misc)
+* [vim-shell](https://github.com/xolox/vim-shell)
