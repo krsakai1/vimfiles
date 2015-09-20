@@ -71,12 +71,14 @@ syn match inputComment "!.*$"
 
 
 " Strings
-syn region inputString start="="ms=e+1 end="$" contains=ALLBUT,inputKeywords keepend oneline
-"syn region inputString start=+"+ end=+"+ keepend
+"syn region inputString start="="ms=e+1 end="$" contains=ALL keepend
+syn region inputString start=+"+ end=+"+ keepend 
 
 
-syn region inputKeywords start="" end=","me=e-1 contains=inputComment oneline
-syn region inputAfterKeyword start="," end="$" contains=ALLBUT,inputKeywords keepend oneline
+syn region inputKeywords     start=+^+  end=+,+me=e-1 contains=inputComment oneline
+syn region inputVariableName start=+,+ end=+=+ oneline
+syn region inputVariable     start=+'+ end=+'+ oneline
+"syn region inputAfterKeyword start="," end="$" contains=ALLBUT,inputKeywords oneline
 
 
 
