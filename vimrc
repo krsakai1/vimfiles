@@ -226,6 +226,7 @@ set noundofile
 
 """ Turn on spell check for git commits
 autocmd FileType gitcommit setlocal spell spelllang=en_us
+autocmd FileType gitcommit normal gg
 
 
 
