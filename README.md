@@ -13,3 +13,4 @@ After cloning use "git submodule update --init" to download plugins.
 * [unite](https://github.com/Shougo/unite.vim)
 * [vim-misc](https://github.com/xolox/vim-misc)
 * [vim-shell](https://github.com/xolox/vim-shell)
+* [indentLine](https://github.com/Yggdroot/indentLine)
