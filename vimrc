@@ -199,9 +199,16 @@ set complete+=k
 "set dictionary+=./testDic2
 "set dictionary+=C:/Program\ Files\ (x86)/Vim/vimfiles/dictionary
 
-autocmd FileType python setlocal dictionary+=C:/Program\ Files\ (x86)/Vim/vimfiles/dictionary/python.dict,C:/Program\ Files\ (x86)/Vim/vimfiles/dictionary/kivy.dict
+"autocmd FileType python setlocal dictionary+=C:/Program\ Files\ (x86)/Vim/vimfiles/dictionary/python.dict,C:/Program\ Files\ (x86)/Vim/vimfiles/dictionary/kivy.dict
 
-autocmd FileType kivy setlocal dictionary+=C:/Program\ Files\ (x86)/Vim/vimfiles/dictionary/kivy.dict
+"autocmd FileType kivy setlocal dictionary+=C:/Program\ Files\ (x86)/Vim/vimfiles/dictionary/kivy.dict
+
+""" Windows dictionary:
+autocmd FileType python setlocal dictionary+=~/vimfiles/bundle/greenegiant_files/dictionary/python.dict
+
+
+""" Unix dictionary:
+autocmd FileType python setlocal dictionary+=~/.vimfiles/bundle/greenegiant_files/dictionary/python.dict
 
 
 """"""""""""""""""""""""""""""""""""""""
