@@ -208,7 +208,7 @@ autocmd FileType python setlocal dictionary+=~/vimfiles/bundle/greenegiant_files
 
 
 """ Unix dictionary:
-autocmd FileType python setlocal dictionary+=~/.vimfiles/bundle/greenegiant_files/dictionary/python.dict
+autocmd FileType python setlocal dictionary+=~/.vim/bundle/greenegiant_files/dictionary/python.dict
 
 
 """"""""""""""""""""""""""""""""""""""""
