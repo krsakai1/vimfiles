@@ -87,6 +87,12 @@ hi openMP		guifg=#c76181 gui=none
 
 hi self	         	guifg=#AA80FE gui=none
 
+
+
+" IndentGuide colors:
+hi IndentGuidesOdd	guibg=#353535
+hi IndentGuidesEven	guibg=#303030
+
 " gitgutter colors:
 hi GitGutterAdd		   guifg=#cae682  guibg=#303030
 hi GitGutterChange	   guifg=#8ac6f2  guibg=#303030

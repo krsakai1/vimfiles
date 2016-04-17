@@ -14,3 +14,4 @@ After cloning use "git submodule update --init" to download plugins.
 * [vim-misc](https://github.com/xolox/vim-misc)
 * [vim-shell](https://github.com/xolox/vim-shell)
 * [indentLine](https://github.com/Yggdroot/indentLine) (REMOVED)
+* [Indent Guides](https://github.com/nathanaelkane/vim-indent-guides)
