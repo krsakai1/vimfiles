@@ -22,6 +22,3 @@
 [submodule "bundle/vim-shell"]
 	path = bundle/vim-shell
 	url = https://github.com/xolox/vim-shell.git
-[submodule "bundle/indentGuides"]
-	path = bundle/indentGuides
-	url = https://github.com/nathanaelkane/vim-indent-guides.git

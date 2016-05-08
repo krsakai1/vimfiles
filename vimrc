@@ -308,19 +308,19 @@ nnoremap <space>rf :Unite -start-insert file_rec<cr>
 
 
 """"""""""""""""""""""""""""""""""""""""
-" Indent Guide Settings:
+" Indent Guide Settings: (REMOVED)
 """"""""""""""""""""""""""""""""""""""""
 
-" Turn on at start:
-let g:indent_guides_enable_on_vim_startup = 1
-
-" Set the guide size to 1:
-let g:indent_guides_guide_size = 1
-
-" Start at level 2:
-let g:indent_guides_start_level = 2
-
-" Turn off the auto color:
-let g:indent_guides_auto_colors = 0
+"""" Turn on at start:
+"""let g:indent_guides_enable_on_vim_startup = 1
+"""
+"""" Set the guide size to 1:
+"""let g:indent_guides_guide_size = 1
+"""
+"""" Start at level 2:
+"""let g:indent_guides_start_level = 2
+"""
+"""" Turn off the auto color:
+"""let g:indent_guides_auto_colors = 0
 
 
