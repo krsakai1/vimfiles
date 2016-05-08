@@ -333,3 +333,15 @@ autocmd FileType cpp setlocal list lcs=tab:\|\
 autocmd FileType h setlocal list lcs=tab:\|\ 
 "set list lcs=tab:\|\ 
 
+
+
+"""""""""""""""""""""""""""""""""""""""""
+" Colorizer Settings:
+""""""""""""""""""""""""""""""""""""""""
+
+" Turn on colors for vim files:
+let g:colorizer_auto_filetype='vim'
+
+" Turn off colorizer for comments:
+let g:colorizer_skip_comments = 1
+

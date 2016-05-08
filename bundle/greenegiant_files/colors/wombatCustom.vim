@@ -12,16 +12,18 @@ endif
 let colors_name = "wombatCustom"
 
 
-" Vim >= 7.0 specific colors
+" Vim >= 7.0 specific colors:
 if version >= 700
-  hi CursorLine guibg=#2d2d2d
-  hi CursorColumn guibg=#2d2d2d
-  hi MatchParen guifg=#f6f3e8 guibg=#857b6f gui=bold
-  hi Pmenu 		guifg=#f6f3e8 guibg=#444444
-  hi PmenuSel 	guifg=#000000 guibg=#cae682
+  hi CursorLine	     guifg=NONE guibg=#2d2d2d
+  hi CursorColumn    guifg=NONE guibg=#2d2d2d
+  hi MatchParen	     guifg=#f6f3e8 guibg=#857b6f gui=bold
+  hi Pmenu 	     guifg=#f6f3e8 guibg=#444444
+  hi PmenuSel	     guifg=#000000 guibg=#cae682
 endif
 
-" General colors
+
+
+" General colors:
 hi Cursor 		guifg=#242424 guibg=#8ac6f2 gui=none
 hi Normal 		guifg=#f6f3e8 guibg=#242424 gui=none
 hi NonText 		guifg=#808080 guibg=#303030 gui=none
@@ -37,16 +39,27 @@ hi Visual		guifg=#f6f3e8 guibg=#444444 gui=none
 " Changing SpecialKey for the indent guides. Need to look for unintented
 " changes.
 hi SpecialKey		guifg=#808080 guibg=#242424 gui=none
-hi ColorColumn		guibg=black
+hi ColorColumn		guifg=NONE guibg=black
 
-""" Spelling
+
+
+
+
+""" Spelling:
 hi SpellBad guifg=#FEBFEF
 hi SpellCap guifg=#AA80FE
 
-" Search Results
-hi Search guibg=#cae682
 
-" Syntax highlighting
+
+
+" Search Results:
+hi Search guifg=NONE guibg=#cae682
+
+
+
+
+
+" Syntax highlighting:
 """hi Comment 		guifg=#99968b gui=italic
 hi Comment 		guifg=#99968b gui=none
 hi Todo 		guifg=#f6f3e8 guibg=#AA80FE gui=none
@@ -92,10 +105,6 @@ hi openMP		guifg=#c76181 gui=none
 hi self	         	guifg=#AA80FE gui=none
 
 
-
-" IndentGuide colors:
-hi IndentGuidesOdd	guibg=#353535
-hi IndentGuidesEven	guibg=#303030
 
 " gitgutter colors:
 hi GitGutterAdd		   guifg=#cae682  guibg=#303030
