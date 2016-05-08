@@ -324,3 +324,12 @@ nnoremap <space>rf :Unite -start-insert file_rec<cr>
 """let g:indent_guides_auto_colors = 0
 
 
+""""""""""""""""""""""""""""""""""""""""
+" IndentLine Settings:
+""""""""""""""""""""""""""""""""""""""""
+
+" Add indentation lines for cpp files:
+autocmd FileType cpp setlocal list lcs=tab:\|\ 
+autocmd FileType h setlocal list lcs=tab:\|\ 
+"set list lcs=tab:\|\ 
+

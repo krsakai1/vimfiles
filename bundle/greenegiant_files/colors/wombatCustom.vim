@@ -1,5 +1,5 @@
-" Maintainer:	Lars H. Nielsen (dengmao@gmail.com)
-" Last Change:	January 22 2007
+" Maintainer:	GreeneGiant
+" Last Change:	May 8 2016
 
 set background=dark
 
@@ -32,7 +32,11 @@ hi VertSplit		guifg=#444444 guibg=#444444 gui=none
 hi Folded 		guibg=#384048 guifg=#a0a8b0 gui=none
 hi Title		guifg=#f6f3e8 guibg=NONE    gui=bold
 hi Visual		guifg=#f6f3e8 guibg=#444444 gui=none
-hi SpecialKey		guifg=#808080 guibg=#343434 gui=none
+"hi SpecialKey		guifg=#808080 guibg=#343434 gui=none
+"
+" Changing SpecialKey for the indent guides. Need to look for unintented
+" changes.
+hi SpecialKey		guifg=#808080 guibg=#242424 gui=none
 hi ColorColumn		guibg=black
 
 """ Spelling
