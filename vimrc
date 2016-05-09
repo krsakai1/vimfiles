@@ -171,6 +171,7 @@ if has ('gui_running')
       set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI
    elseif has("gui_macvim")
       set guifont=DejaVu_Sans_Mono_for_Powerline:h14
+      set lines=75
    elseif has("gui_gtk2")
       set guifont=DejaVu_Sans_Mono_for_Powerline:h10
    endif
@@ -233,7 +234,8 @@ set noundofile
 
 """ Turn on spell check for git commits
 autocmd FileType gitcommit setlocal spell spelllang=en_us
-autocmd FileType gitcommit normal gg
+"autocmd FileType gitcommit normal gg
+autocmd FileType gitcommit normal :1
 
 
 
