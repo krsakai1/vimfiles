@@ -53,7 +53,7 @@ hi SpellCap guifg=#AA80FE
 
 
 " Search Results:
-hi Search guifg=NONE guibg=#cae682
+hi Search guifg=#242424 guibg=#cae682
 
 
 
