@@ -243,6 +243,11 @@ autocmd FileType gitcommit normal :1
 autocmd FileType output normal G zo
 
 
+
+" Disable silly LaTeX typesetting
+let g:tex_conceal = ""
+
+
 """"""""""""""""""""""""""""""""""""""""
 " Airline Settings:
 """"""""""""""""""""""""""""""""""""""""
