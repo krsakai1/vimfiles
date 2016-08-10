@@ -164,10 +164,13 @@ endfunction
 set colorcolumn=80
 set textwidth=0
 
-""""set nowrap
+" Disable line breaking:
 set nolbr
+
+" Disbale backup files:
 set nobackup
 set nowritebackup
+
 
 if has ('gui_running')
    if has("gui_win32")
@@ -181,8 +184,12 @@ if has ('gui_running')
    endif
 endif
 
-"""set antialias
+" Turn off antialiasing:
 set noantialias
+
+
+" Allow the creation of a new buffer while there are edits in the current one:
+set hidden
 
 
 
@@ -260,6 +267,17 @@ let g:airline_powerline_fonts = 1
 
 """ Turn off gitgutter info:
 let g:airline#extensions#hunks#enabled = 0
+
+
+
+""" Turn on smarter tab line (to see buffers) sdgfgf:
+let g:airline#extensions#tabline#enabled = 1
+
+""" Show the buffer number:
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+""" Only show the buffer line for more than one buffer:
+let g:airline#extensions#tabline#buffer_min_count = 2
 
 
 
