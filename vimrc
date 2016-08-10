@@ -54,9 +54,7 @@ set mouse=a
 
 
 
-set softtabstop=3
-set shiftwidth=3
-set noexpandtab
+
 
 au BufRead,BufNewFile *.input setfiletype input
 au BufRead,BufNewFile *.output setfiletype output
@@ -69,10 +67,16 @@ au BufRead,BufNewFile *.kv setfiletype kivy
 autocmd FileType output setlocal foldmethod=syntax
 
 
-autocmd FileType cpp setlocal shiftwidth=4 tabstop=4 softtabstop=4
-autocmd FileType h setlocal shiftwidth=4 tabstop=4 softtabstop=4
+" Tab settings:
+set softtabstop=3
+set shiftwidth=3
+set noexpandtab
+
+autocmd FileType cpp	setlocal shiftwidth=3 tabstop=3 softtabstop=3 expandtab
+autocmd FileType h	setlocal shiftwidth=3 tabstop=3 softtabstop=3 expandtab
 autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
-autocmd FileType kivy setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
+autocmd FileType kivy	setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
+autocmd FileType tex	setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 
 
 " Pylint settings:
@@ -193,16 +197,6 @@ set completeopt-=preview
 
 """ Turn on dictionaries for autocomplete:
 set complete+=k
-
-""" Specify dictionsaries:
-"set dictionary+=C:\Program Files (x86)\Vim\testDic
-"set dictionary+=C:/Program\ Files\ (x86)/Vim/testDic
-"set dictionary+=./testDic2
-"set dictionary+=C:/Program\ Files\ (x86)/Vim/vimfiles/dictionary
-
-"autocmd FileType python setlocal dictionary+=C:/Program\ Files\ (x86)/Vim/vimfiles/dictionary/python.dict,C:/Program\ Files\ (x86)/Vim/vimfiles/dictionary/kivy.dict
-
-"autocmd FileType kivy setlocal dictionary+=C:/Program\ Files\ (x86)/Vim/vimfiles/dictionary/kivy.dict
 
 """ Windows dictionary:
 autocmd FileType python setlocal dictionary+=~/vimfiles/bundle/greenegiant_files/dictionary/python.dict
