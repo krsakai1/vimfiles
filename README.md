@@ -16,3 +16,4 @@ Add plugins with "git submodule add \<package url\> bundle/\<package name\>".
 * [vim-misc](https://github.com/xolox/vim-misc)
 * [vim-shell](https://github.com/xolox/vim-shell)
 * [indentLine](https://github.com/Yggdroot/indentLine)
+* [easytags](https://github.com/xolox/vim-easytags)

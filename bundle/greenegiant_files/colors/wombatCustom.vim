@@ -1,5 +1,5 @@
 " Maintainer:	GreeneGiant
-" Last Change:	May 8 2016
+" Last Change:	Aug 10 2016
 
 set background=dark
 
@@ -23,7 +23,7 @@ endif
 
 
 
-" General colors:
+""" General Colors:
 hi Cursor 		guifg=#242424 guibg=#8ac6f2 gui=none
 hi Normal 		guifg=#f6f3e8 guibg=#242424 gui=none
 hi NonText 		guifg=#808080 guibg=#303030 gui=none
@@ -52,14 +52,14 @@ hi SpellCap guifg=#AA80FE
 
 
 
-" Search Results:
+""" Search Results:
 hi Search guifg=#242424 guibg=#cae682
 
 
 
 
 
-" Syntax highlighting:
+""" Syntax Highlighting:
 """hi Comment 		guifg=#99968b gui=italic
 hi Comment 		guifg=#99968b gui=none
 hi Todo 		guifg=#f6f3e8 guibg=#AA80FE gui=none
@@ -106,13 +106,26 @@ hi self	         	guifg=#AA80FE gui=none
 
 
 
-" gitgutter colors:
+""" Gitgutter Colors:
 hi GitGutterAdd		   guifg=#cae682  guibg=#303030
 hi GitGutterChange	   guifg=#8ac6f2  guibg=#303030
 hi GitGutterDelete	   guifg=#e5786d  guibg=#303030
 hi GitGutterChangeDelete   guifg=#FEDFBF  guibg=#303030
 """ This didn't work. Had to change LineNr instead.
 """hi SignColumn		   guifg=#303030  guibg=#303030
+
+
+
+
+""" EasyTags Highlighting:
+hi cTypeTag  guifg=#cae682 gui=bold
+hi cEnumTag  guifg=#cae682 gui=bold
+hi cPreProcTag  guifg=#cae682 gui=bold
+hi cFunctionTag  guifg=#8ac6f2 gui=bold
+
+
+
+
 
 """ Normal Text 246, 243, 232
 """ Normal BG 36, 36, 36
