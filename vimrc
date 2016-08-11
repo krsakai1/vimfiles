@@ -225,7 +225,7 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
 """ Always use free format for fortran
-:let fortran_free_source=1
+let fortran_free_source=1
 
 
 """ Case insensitive seach (can use \C and \c to change behavior)
@@ -287,14 +287,14 @@ let g:airline#extensions#tabline#buffer_min_count = 2
 
 
 """"""""""""""""""""""""""""""""""""""""
-" Tagbar Settings:
+" Tagbar Settings: (REMOVED)
 """"""""""""""""""""""""""""""""""""""""
 
-""" Increase the window size when opening tagbar:
-let g:tagbar_expand = 1
-
-""" Map "TagbarToggle" to F8:
-nmap <F8> :TagbarToggle<CR>
+"""" Increase the window size when opening tagbar:
+"let g:tagbar_expand = 1
+"
+"""" Map "TagbarToggle" to F8:
+"nmap <F8> :TagbarToggle<CR>
 
 
 
@@ -354,7 +354,6 @@ nnoremap <space>rf :Unite -start-insert file_rec<cr>
 " Add indentation lines for cpp files:
 autocmd FileType cpp setlocal list lcs=tab:\|\ 
 autocmd FileType h setlocal list lcs=tab:\|\ 
-"set list lcs=tab:\|\ 
 
 
 
