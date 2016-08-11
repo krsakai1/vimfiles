@@ -182,6 +182,10 @@ if has ('gui_running')
    elseif has("gui_gtk2")
       set guifont=DejaVu_Sans_Mono_for_Powerline:h10
    endif
+
+   " Turn off the bells!
+   set noerrorbells
+   autocmd GUIEnter * set vb t_vb=
 endif
 
 " Turn off antialiasing:
