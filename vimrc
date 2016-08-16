@@ -317,6 +317,10 @@ let g:unite_source_history_yank_enable = 1
 nnoremap <space>y :Unite history/yank<cr>
 
 
+""" buffer:
+nnoremap <space>b :Unite buffer<cr>
+
+
 """ file search (async needs vimproc):
 nnoremap <space>f :Unite -start-insert file<cr>
 
