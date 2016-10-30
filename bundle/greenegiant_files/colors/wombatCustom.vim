@@ -1,5 +1,6 @@
 " Maintainer:	GreeneGiant
 " Last Change:	Aug 10 2016
+" Use :hi to preview all the highlighting settings
 
 set background=dark
 
