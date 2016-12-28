@@ -352,34 +352,34 @@ nnoremap <space>rf :Unite -start-insert file_rec<cr>
 
 
 """"""""""""""""""""""""""""""""""""""""
-" EasyTags Settings:
+" EasyTags Settings: (removed, too slow on large projects, tag jumping is enough)
 """"""""""""""""""""""""""""""""""""""""
 " Requires exuberant ctags http://ctags.sourceforge.net/
 
-" Let Vim walk up directory hierarchy from CWD to root looking for tags file
-set tags=tags;/
-
-" Tell EasyTags to use the tags file found by Vim
-let g:easytags_dynamic_files = 1
-
-" Disable auto highlighting, just too slow for large projects
-let g:easytags_auto_highlight = 0
-
-" Disbale auto update, would be better on a file type basis
-let g:easytags_auto_update = 0
-
-
-" Turn on auto update for cpp and h files (Old, use command instead)
-"autocmd FileType h   let g:easytags_auto_update = 1
-"autocmd FileType cpp let g:easytags_auto_update = 1
-
-
-" Provide a command to turn on auto tag updating:
-function AutoTagsFunction()
-  let g:easytags_auto_update = 1
-endfunction
-
-command -nargs=0 AutoTags call AutoTagsFunction()
+"""" Let Vim walk up directory hierarchy from CWD to root looking for tags file
+"""set tags=tags;/
+"""
+"""" Tell EasyTags to use the tags file found by Vim
+"""let g:easytags_dynamic_files = 1
+"""
+"""" Disable auto highlighting, just too slow for large projects
+"""let g:easytags_auto_highlight = 0
+"""
+"""" Disbale auto update, would be better on a file type basis
+"""let g:easytags_auto_update = 0
+"""
+"""
+"""" Turn on auto update for cpp and h files (Old, use command instead)
+""""autocmd FileType h   let g:easytags_auto_update = 1
+""""autocmd FileType cpp let g:easytags_auto_update = 1
+"""
+"""
+"""" Provide a command to turn on auto tag updating:
+"""function AutoTagsFunction()
+"""  let g:easytags_auto_update = 1
+"""endfunction
+"""
+"""command -nargs=0 AutoTags call AutoTagsFunction()
 
 
 " Change the shortcuts for tag jumping:
