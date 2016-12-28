@@ -381,6 +381,16 @@ endfunction
 command -nargs=0 AutoTags call AutoTagsFunction()
 
 
+" Change the shortcuts for tag jumping:
+" Ctrl+] :: Provide list of tags, then jump
+" Ctrl+t :: Return to previous location
+map <C-]> :exec("tjump ".expand("<cword>"))<CR>
+"map <C-[> <C-t> " Very bad idea, this is the same as esc!
+
+" Open in new vertical tab:
+map <C-\> :vsp split<CR>:exec("tag ".expand("<cword>"))<CR>
+
+
 """"""""""""""""""""""""""""""""""""""""
 " IndentLine Settings:
 """"""""""""""""""""""""""""""""""""""""
@@ -396,7 +406,7 @@ autocmd FileType h setlocal list lcs=tab:\|\
 """"""""""""""""""""""""""""""""""""""""
 
 " Turn on colors for vim files:
-let g:colorizer_auto_filetype='vim'
+"let g:colorizer_auto_filetype='vim' (this can cause slow down and lag)
 
 " Turn off colorizer for comments:
 let g:colorizer_skip_comments = 1

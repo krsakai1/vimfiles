@@ -33,7 +33,7 @@ hi StatusLine		guifg=#f6f3e8 guibg=#444444 gui=italic
 hi StatusLineNC		guifg=#857b6f guibg=#444444 gui=none
 hi VertSplit		guifg=#444444 guibg=#444444 gui=none
 hi Folded 		guibg=#384048 guifg=#a0a8b0 gui=none
-hi Title		guifg=#f6f3e8 guibg=NONE    gui=bold
+"hi Title		guifg=#f6f3e8 guibg=NONE    gui=bold " Defined below in tjump
 hi Visual		guifg=#f6f3e8 guibg=#444444 gui=none
 "hi SpecialKey		guifg=#808080 guibg=#343434 gui=none
 "
@@ -55,6 +55,23 @@ hi SpellCap guifg=#AA80FE
 
 """ Search Results:
 hi Search guifg=#242424 guibg=#cae682
+
+
+
+""" Tjump:
+""" Also affects some other things
+hi Directory  guifg=#8ac6f2 gui=none
+hi ModeMsg    guifg=#AA80FE gui=bold
+hi Title      guifg=#cae682 gui=bold
+
+ 
+
+ 
+
+""" Error Messages:
+hi ErrorMsg   guifg=#242424 guibg=#e5786d
+hi Error      guifg=#242424 guibg=#e5786d
+hi WarningMsg guifg=#e5786d
 
 
 
