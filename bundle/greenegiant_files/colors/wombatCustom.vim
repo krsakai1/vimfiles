@@ -64,7 +64,15 @@ hi Directory  guifg=#8ac6f2 gui=none
 hi ModeMsg    guifg=#AA80FE gui=bold
 hi Title      guifg=#cae682 gui=bold
 
- 
+
+
+
+""" CSV:
+"hi CSVHeaderLine
+hi CSVColumnHeaderOdd  guifg=#242424 guibg=#cae682
+hi CSVColumnHeaderEven guifg=#242424 guibg=#8ac6f2
+hi CSVColumnOdd        guifg=#cae682
+hi CSVColumnEven       guifg=#8ac6f2
 
  
 

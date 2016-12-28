@@ -354,6 +354,7 @@ nnoremap <space>rf :Unite -start-insert file_rec<cr>
 """"""""""""""""""""""""""""""""""""""""
 " EasyTags Settings:
 """"""""""""""""""""""""""""""""""""""""
+" Requires exuberant ctags http://ctags.sourceforge.net/
 
 " Let Vim walk up directory hierarchy from CWD to root looking for tags file
 set tags=tags;/
@@ -410,4 +411,12 @@ autocmd FileType h setlocal list lcs=tab:\|\
 
 " Turn off colorizer for comments:
 let g:colorizer_skip_comments = 1
+
+
+"""""""""""""""""""""""""""""""""""""""""
+" CSV Settings:
+""""""""""""""""""""""""""""""""""""""""
+
+" Don't hide the commas
+let g:csv_no_conceal = 1
 
