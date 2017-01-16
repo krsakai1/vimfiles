@@ -161,7 +161,7 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
-set colorcolumn=80
+"set colorcolumn=80
 set textwidth=0
 
 " Disable line breaking:
@@ -174,8 +174,8 @@ set nowritebackup
 
 if has ('gui_running')
    if has("gui_win32")
-      "set guifont=DejaVu_Sans_Mono:h10:cANSI
-      set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI
+      set guifont=consolas:h12
+      "set guifont=DejaVu_Sans_Mono_for_Powerline:h10:cANSI
    elseif has("gui_macvim")
       set guifont=DejaVu_Sans_Mono_for_Powerline:h14
       set lines=75
@@ -195,7 +195,9 @@ set noantialias
 " Allow the creation of a new buffer while there are edits in the current one:
 set hidden
 
-
+" line numbers. 
+:set nu
+highlight LineNr guifg=grey guibg=black
 
 """"""""""""""""""""""""""""""""""""""""
 " Autocomplete Settings:

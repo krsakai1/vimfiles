@@ -86,8 +86,7 @@ hi WarningMsg guifg=#e5786d
 
 
 """ Syntax Highlighting:
-"""hi Comment 		guifg=#99968b gui=italic
-hi Comment 		guifg=#99968b gui=none
+hi Comment 		guifg=#99968b gui=italic
 hi Todo 		guifg=#f6f3e8 guibg=#AA80FE gui=none
 
 """
