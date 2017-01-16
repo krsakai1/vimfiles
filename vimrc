@@ -419,6 +419,10 @@ let g:colorizer_skip_comments = 1
 " CSV Settings:
 """"""""""""""""""""""""""""""""""""""""
 
-" Don't hide the commas
+" Don't hide the commas:
 let g:csv_no_conceal = 1
 
+" Turn off CSV for dat files:
+augroup filetypedetect
+  au! BufRead,BufNewFile *.dat    setfiletype dat
+augroup END
